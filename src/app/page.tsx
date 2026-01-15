@@ -301,11 +301,11 @@ export default function Home() {
                     className={`px-3 py-2 text-left rounded-none transition-colors ${
                       role === key ? 'sheikah-map-btn-active' : 'sheikah-map-btn'
                     }`}
-                    initial={{ opacity: 0, x: -50 }}
+                    initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
-                    whileHover={{ scale: 1.05, x: 8, boxShadow: '0 0 15px rgba(0,243,255,0.4)' }}
-                    whileTap={{ scale: 0.9 }}
-                    transition={{ duration: 0.4, delay: 0.5 + i * 0.08 }}
+                    whileHover={{ scale: 1.02, backgroundColor: 'rgba(0,243,255,0.1)' }}
+                    whileTap={{ scale: 0.98 }}
+                    transition={{ duration: 0.15, delay: i * 0.03 }}
                   >
                     {ROLES[key].name}
                   </motion.button>
